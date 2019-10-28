@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import '../App.css';
 
 class Film extends Component {
   render() {
-    return <h1>I am film</h1> 
+    return (
+      <div className="film">
+        <a href={this.props.url} target="blank">{this.props.children}</a>
+      </div>
+    )
   }
 }
 

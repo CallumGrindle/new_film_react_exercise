@@ -4,7 +4,10 @@ import './App.css';
 
 function App() {
   return (
-    <FilmBox />
+    <div className="app">
+      <h1>Coming Soon!</h1>
+      <FilmBox />
+    </div>
   );
 }
 

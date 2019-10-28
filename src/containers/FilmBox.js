@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FilmList from '../components/FilmList.js'
+import '../App.css';
 
 class FilmBox extends Component {
   constructor(props) {
@@ -37,8 +38,8 @@ class FilmBox extends Component {
 
   render() {
     return (
-      <div>
-        <FilmList />
+      <div className="film-box">
+        <FilmList films={ this.state.data }/>
       </div>
     )
   }
